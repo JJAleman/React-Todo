@@ -7,7 +7,9 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <h2>Welcome to your Todo App! Juan </h2>
+        <h2>Welcome to your Todo App! Juan Adding ramdom stuff to commit
+          
+        </h2>
       </div>
     );
   }

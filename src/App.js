@@ -26,6 +26,7 @@ class App extends React.Component {
     };
   }
 
+  // This toggles the todo on and off it is completed
   toggleTodo = todoId => {
     console.log(`toggleTodo: `, todoId);
     this.setState({
@@ -39,7 +40,17 @@ class App extends React.Component {
         return todo;
       })
     });
-  }
+  };
+
+  // This will clear the todos that have been completed
+  clearTodo = () => {
+    console.log('cleared todo!');
+    this.setState({
+      todos: this.state.todos.filter(todo => {
+        return !todo.completed;
+      })
+    });
+  };
 
   
 

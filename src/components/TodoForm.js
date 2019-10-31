@@ -10,12 +10,15 @@ class TodoForm extends React.Component {
         };
     }
 
+    // allows you to take from the input field?
     handleChanges = e => {
-        this.state({
+        this.setState({
             todoName: e.target.value
         });
     };
 
+
+    // prevents the default behavior of refreshing the page and it stops it from adding another todo if the field is empty.
     handleSubmit = e => {
         e.preventDefault();
         if(this.state.todoName !== '') {
@@ -28,7 +31,15 @@ class TodoForm extends React.Component {
 
     render() {
         return (
-            <div></div>
+           <form onSubmit={this.handleSubmit}>
+               <input
+               onChange = {this.handleChanges}
+               type = 'text'
+               name = 'todo'
+               value = {this.state.todoName}
+               />
+               <button>Add Todo</button>
+           </form>
         )
     }
 

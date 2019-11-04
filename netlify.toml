@@ -1,6 +1,6 @@
 [build]
-base = "reacttodo/"
-publish = "reacttodo/build/"
+base = "react-todo/"
+publish = "react-todo/build/"
 command = "yarn build"
 
 [[redirects]]

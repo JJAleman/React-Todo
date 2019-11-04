@@ -1,4 +1,4 @@
 [build]
-base = "myapp/"
-publish = "myapp/build/"
+base = "reacttodo/"
+publish = "reacttodo/build/"
 command = "yarn build"

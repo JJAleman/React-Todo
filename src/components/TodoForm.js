@@ -31,14 +31,14 @@ class TodoForm extends React.Component {
 
     render() {
         return (
-           <form onSubmit={this.handleSubmit}>
-               <input
+           <form onSubmit={this.handleSubmit} className="input-wrapper">
+               <input className="input"
                onChange = {this.handleChanges}
                type = 'text'
                name = 'todo'
                value = {this.state.todoName}
                />
-               <button>Add Todo</button>
+               <button className="btn-2">Add Todo</button>
            </form>
         )
     }
